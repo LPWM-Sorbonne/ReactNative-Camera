@@ -5,7 +5,7 @@
 <h3 align="center">ReactNative-Camera</h3>
 <p align="center">Application mobile permettant de capturer des photos avec la caméra, les stocker localement et les afficher dans une galerie intégrée avec options de suppression.</p>
 
-<p align ="center">Ce projet a été réalisé par <b>Shanthakumar Thanus</b>, <b>Diallo Ibrahima</b> et <b>Disy Théo</b> </p>
+<p align ="center">Ce projet a été réalisé par <b>Shanthakumar Thanus</b>, <b>Diallo Ibrahima</b> et <b>Disy Théo</b>.</p>
 
 ## Description
 
@@ -83,7 +83,7 @@ Ce projet utilise plusieurs technologies modernes pour créer une expérience in
 
 - L'utilisation de la caméra est gérée avec une référence via useRef, ce qui permet d'appeler des méthodes comme `takePictureAsync()`. Une fois la photo capturée, celle-ci est d’abord stockée temporairement, puis déplacée manuellement dans un dossier nommé `photos/`, situé dans le répertoire local `documentDirectory`.
 
-- L’affichage des photos se fait en lisant le contenu du dossier photos/ à l’aide de `FileSystem.readDirectoryAsync()`. Chaque image est ensuite affichée dans une grille, et l’utilisateur peut supprimer une photo en appuyant simplement dessus : l’action appelle `FileSystem.deleteAsync()` pour effacer le fichier, puis met à jour immédiatement l’état local de la galerie via `setGalerie()`. En revanche, l’ajout d’une photo ne déclenche pas automatiquement la mise à jour de la galerie. Il est donc nécessaire de cliquer manuellement sur le bouton "rafraîchir" pour forcer la récupération du contenu du dossier photos/ et voir apparaître les nouvelles images. Neanmoins cela peut être rectifié en ajoutant un déclencheur des qu'on clique sur la galerie.
+- L’affichage des photos se fait en lisant le contenu du dossier photos/ à l’aide de `FileSystem.readDirectoryAsync()`. Chaque image est ensuite affichée dans une grille, et l’utilisateur peut supprimer une photo en appuyant simplement dessus : l’action appelle `FileSystem.deleteAsync()` pour effacer le fichier, puis met à jour immédiatement l’état local de la galerie via `setGalerie()`. En revanche, l’ajout d’une photo ne déclenche pas automatiquement la mise à jour de la galerie. Il est donc nécessaire de cliquer manuellement sur le bouton "rafraîchir" pour forcer la récupération du contenu du dossier `photos/` et voir apparaître les nouvelles images. Neanmoins cela peut être rectifié en ajoutant un déclencheur des qu'on clique sur la galerie.
 
 
 
